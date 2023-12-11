@@ -1,7 +1,56 @@
+.bgPokemon {
+  background-image: url("/bgPokemon.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+.carta {
+  border: 10px solid #ffe165;
+  border-radius: 15px;
+}
+
 .bgGrass {
-  background-color: green;
+  background-color: #67b93f;
 }
 
 .bgWater {
-  background-color: blue;
+  background-color: #12ade7;
+}
+
+.bgNormal {
+  background-color: #eff1ee;
+}
+
+.bgFire {
+  background-color: #f37434;
+}
+
+.bgEletrico {
+  background-color: #fdd108 ;
+}
+
+.bgPsiquico {
+  background-color: #8e59a1;
+}
+
+.bgDark {
+  background-color: #172629;
+}
+
+.bgDragon {
+  background-color: #D9A41A;
+}
+
+.bgFada {
+  background-color: #DD3D86;
+}
+
+.bgLutador {
+  background-color: #c87c22;
+}
+
+.bgMetal {
+  background-color: #80908f;
 }

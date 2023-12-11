@@ -39,7 +39,7 @@ const Pokemon = ({ pokemon }) => {
         case 'ghost':
         case 'psychic':
             background = "bgPsiquico"
-            srcEnergia = "/elementos/psquico.png"
+            srcEnergia = "/elementos/psiquico.png"
             break
         case 'shadow':
         case 'dark':
@@ -67,19 +67,19 @@ const Pokemon = ({ pokemon }) => {
     }
 
     return (
-        <div>
+        <div className={`${background} ${"carta"}`}>
             <div>
                 <h3>{nomeMais}</h3>
-                <h3 className={background}>HP: {pokemon.stats[0].base_stat}</h3>
+                <h3>HP: {pokemon.stats[0].base_stat}</h3>
                 <img src={srcEnergia} alt={tipoPokemon} />
             </div>
-
-
-            <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-            <p>{pokemon.moves[2].move.name}</p>
-            <p>{pokemon.moves[4].move.name}</p>
-
-
+            <div className="bgPokemon">
+                <img src={pokemon.sprites.front_default} alt={pokemon.name} />
+            </div>
+            <div>
+                <p>{pokemon.moves[2].move.name}</p>
+                <p>{pokemon.moves[4].move.name}</p>
+            </div>
         </div>
     )
 }
