@@ -1,17 +1,16 @@
 import style from '@/components/Pokedex.module.css'
 const Pokemon = ({ pokemon }) => {
-    // const validaTipo = () => {
-    //  (pokemon.types.lenght = 1) 
-    // return <p>pokemon.types[0].type.name </p>
-    // } else {
-    //     return <p>pokemon.types[0].type.name</p> && <p> pokemon.types[1].type.name</p>
-    // }
+    function letraMais(string) {
+        return string.charAt(0).toUpperCase() + string.substring(1);
+    }
+    const nomeMais = letraMais(pokemon.name);
+ 
 
     
    
     return (
         <div className={style.nome}>
-            <h1>{pokemon.name}</h1>
+            <h1>{nomeMais}</h1>
             <div className={style.img}>
                 <img src={pokemon.sprites.front_default} alt={pokemon.name} />
                 <img src={pokemon.sprites.back_default} alt={pokemon.name} />
@@ -23,10 +22,7 @@ const Pokemon = ({ pokemon }) => {
                 <div className={style.classe1}>
                     <h3>Type: </h3>
                     <p>{pokemon.types[0].type.name}</p>
-
-
-        
-                    <h3>HP: </h3>
+                                        <h3>HP: </h3>
                     <p>{pokemon.stats[0].base_stat}</p>
 
                     <h3>Attack: </h3>

@@ -1,11 +1,3 @@
-.tudo{
-    background-color: #fbfaee;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-}
-
 .input{
     border-radius: 20px;
     width: 20%;

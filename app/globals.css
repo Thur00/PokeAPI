@@ -2,3 +2,23 @@
     margin: 0;
     padding: 0;
 }
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.tudo1{
+    background-color: #fbfaee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+}
+
+.tudo2{
+    background-color: #fbfaee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
