@@ -1,6 +1,8 @@
 "use client"
 
 import Carta from "@/components/Carta"
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 import { useState } from "react"
 
 function CartaPoke() {
@@ -59,7 +61,8 @@ function CartaPoke() {
 
     return (
         <div>
-            <h1>Pokedex</h1>
+            <Header></Header>
+            <h1 className="titutis"> Pokecards </h1>
             <input
                 type="text"
                 value={pokemonID}
@@ -71,6 +74,7 @@ function CartaPoke() {
 
             {error && <p style={{ color: "red" }}>{error}</p>}
             {pokemon && <Carta pokemon={pokemon} />}
+            <Footer></Footer>
         </div>
     )
 }

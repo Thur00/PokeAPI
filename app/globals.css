@@ -111,8 +111,8 @@ html {
 
 .gradiente {
     height: 100vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(130,184,115,1) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 20%, rgba(130, 184, 115, 1) 100%);
 }
 
 a {
@@ -145,62 +145,118 @@ a {
     margin: 0 auto;
 }
 
+.bgGrass {
+    background-color: #67b93f;
+}
+
+.bgWater {
+    background-color: #12ade7;
+}
+
+.bgNormal {
+    background-color: #eff1ee;
+}
+
+.bgFire {
+    background-color: #f37434;
+}
+
+.bgEletrico {
+    background-color: #fdd108;
+}
+
+.bgPsiquico {
+    background-color: #8e59a1;
+}
+
+.bgDark {
+    background-color: #172629;
+    color: white
+}
+
+.bgDragon {
+    background-color: #D9A41A;
+}
+
+.bgFada {
+    background-color: #DD3D86;
+}
+
+.bgLutador {
+    background-color: #c87c22;
+}
+
+.bgMetal {
+    background-color: #80908f;
+}
+
 .bgPokemon {
     background-image: url("/bgPokemon.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50%;
-  }
-  
-  .carta {
+    width: 90%;
+    height: 35%;
+    margin: 0 auto 3%;
+    
+}
+
+.carta {
     border: 10px solid #ffe165;
     border-radius: 15px;
-  }
-  
-  .bgGrass {
-    background-color: #67b93f;
-  }
-  
-  .bgWater {
-    background-color: #12ade7;
-  }
-  
-  .bgNormal {
-    background-color: #eff1ee;
-  }
-  
-  .bgFire {
-    background-color: #f37434;
-  }
-  
-  .bgEletrico {
-    background-color: #fdd108 ;
-  }
-  
-  .bgPsiquico {
-    background-color: #8e59a1;
-  }
-  
-  .bgDark {
-    background-color: #172629;
-  }
-  
-  .bgDragon {
-    background-color: #D9A41A;
-  }
-  
-  .bgFada {
-    background-color: #DD3D86;
-  }
-  
-  .bgLutador {
-    background-color: #c87c22;
-  }
-  
-  .bgMetal {
-    background-color: #80908f;
-  }
+    width: 60vh;
+    height: 80vh;
+    margin: 0 auto 3%;
+}
+
+.nomepoke {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3% auto;
+    align-items: center;
+    width: 90%;
+
+}
+
+.energiapoke {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+}
+
+.energiapoke h3 {
+    width: 50%  ;
+    text-align: right;
+}
+
+.hp {
+    font-size: 10pt;
+}
+
+.fotoElemento {
+    width: 5vh;
+    height: 5vh;
+}
+
+.fotoPoke{
+    margin: 0 auto 3%;
+    display: flex;
+    flex-direction: column;
+    width: 30vh;
+}
+
+.descriçao{
+    margin-left: 5%;
+}
+
+.titutis{
+    text-align: center;
+    margin: 2%;
+}
 
 @media only screen and (max-width: 800px) {
 
@@ -208,11 +264,11 @@ a {
         padding: 10px;
         font-size: 0.8rem;
     }
-    
+
     .api2 {
         padding: 10px;
         font-size: 0.8rem;
-    } 
+    }
 
     .flexbox {
         flex-direction: column;
@@ -227,7 +283,7 @@ a {
         width: 30vh;
         height: 15vh;
     }
-    
+
     .quadrados {
         padding: 30px;
         width: 80%;
@@ -243,6 +299,18 @@ a {
         width: 300%;
     }
 
+    .carta {
+        width: 35vh;
+        height: 50vh;
+    }
+
+    .fotoElemento {
+        width: 3vh;
+        height: 3vh;
+    }
+
+    .fotoPoke{
+        width: 20vh;
+    }
 
 }
-

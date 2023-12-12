@@ -1,8 +1,12 @@
 import Image from "next/image"
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 function PgInicial() {
   return (
     <>
+
+    <Header></Header>
 
       <div className="flex" >
         <div className="image">
@@ -54,6 +58,9 @@ function PgInicial() {
         </div>
 
       </div>
+
+      <Footer></Footer>
+      
     </>
   )
 }

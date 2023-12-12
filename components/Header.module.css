@@ -32,3 +32,10 @@
 .img2 img {
     width: 100%;
 }
+
+@media only screen and (max-widTh: 800px) {
+
+    .nav{
+        font-size: 9pt;
+    }
+}
