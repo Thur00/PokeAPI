@@ -1,0 +1,23 @@
+.tudo{
+    background-color: #fbfaee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.input{
+    border-radius: 20px;
+    width: 20%;
+    margin: 1%;
+    padding: 2px 10px;
+}
+.tit{
+    color: #ffde00;
+    background-color:  #3b4cca;
+    width: 60%;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 2%;
+}
+
