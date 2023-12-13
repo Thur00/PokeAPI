@@ -2,8 +2,6 @@
 import React, { useState } from "react"
 import Pokedexcomp from "@/components/Pokedexcomp"
 import style from "@/app/pokedex/page.module.css"
-import Header from "@/components/Header"
-import Footer from "@/components/Footer"
 import Image from "next/image"
 
 

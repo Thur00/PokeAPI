@@ -5,8 +5,6 @@ import Pokemon2 from "@/components/Pokemon2";
 import { useState } from "react"
 import styles from "./page.module.css"
 import Image from "next/image";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 function PokeBattle() {
     const [pokemonId1, setPokemonId1] = useState(null)

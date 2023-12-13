@@ -4,6 +4,10 @@
     width: 100%;
     box-shadow: 5px 10px 8px #00000092;
     z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .img img {
@@ -31,11 +35,12 @@
 }
 
 .classe2 p {
-    color: white
+    color: white;
 }
 
 .classe2 h3 {
-    color: #ffde00
+    color: #ffde00;
+    margin-top: 10%;
 }
 
 .classe1 {
@@ -48,11 +53,12 @@
 }
 
 .classe1 p {
-    color: white
+    color: white;
 }
 
 .classe1 h3 {
-    color: #ffde00
+    color: #ffde00;
+    margin-top: 10%;
 }
 
 .nome {
@@ -63,4 +69,21 @@
     font-size: x-large;
     margin-top: 2%;
     margin-bottom: 0, 5%;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .img {
+        flex-direction: column;
+    }
+
+
+    .img img {
+        width: 70%;
+    }
+
+    .infos {
+        width: 80%;
+        padding: 5% 3%;
+    }
 }

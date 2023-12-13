@@ -1,7 +1,5 @@
 'use client'
 
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
 import Integrante from '@/components/Integrantes'
 import styles from '@/components/integrante.module.css'
 
