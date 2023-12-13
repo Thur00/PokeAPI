@@ -55,7 +55,6 @@ function PokeBattle() {
     const [img, setImg] = useState(null)
 
     const startBattle = () => {
-        debugger
         if (pokemon1 === null || pokemon2 === null) {
             setError3("Você ainda não inseriu um pokemon. Insira e tente novamente")
         } else {
@@ -88,6 +87,7 @@ function PokeBattle() {
                 }
                 else {
                     setVencedor("Houve um empate")
+                    setImg("/pikachuEmpate.png")
                 }
             }
             else if (ataquesPoke1 < ataquesPoke2) {
@@ -132,15 +132,18 @@ function PokeBattle() {
 
                 <div className={styles.campoBatalha}>
                     {pokemon1 && <Pokemon1 pokemon={pokemon1} />}
-                    <Image className={styles.versus} src="/versus.png" alt="Versus" width={200} height={125} />
+                    <div className={styles.boxVersus}>
+                        <Image src="/versus.png" alt="Versus" fill sizes="100%, 100%" />
+                    </div>
                     {pokemon2 && <Pokemon2 pokemon={pokemon2} />}
 
                     <div className="boxVencedor">
                         <h2>Vencedor</h2>
-
-                        <h4>{vencedor}</h4>
-                        <br /><br />
-                        <img src={img} fill sizes="100%,100%" alt={vencedor} />
+                        <div>
+                            <h4>{vencedor}</h4>
+                            <br /><br />
+                            <img src={img} fill sizes="100%,100%" alt={vencedor} />
+                        </div>
                     </div>
 
                     <div className="boxBtn">

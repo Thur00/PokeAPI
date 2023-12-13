@@ -19,3 +19,18 @@
 .pokemon2 img {
     width: 100%;
 }
+
+@media only screen and (max-width: 800px) {
+
+    .pokemon1 {
+        bottom: -20%;
+        left: -35%;   
+        width: 130%;
+    }
+    
+    .pokemon2 {
+        top: 25%;
+        right: 1%;   
+        width: 70%; 
+    }
+}
