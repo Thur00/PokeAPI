@@ -1,0 +1,21 @@
+.pokemon1 {
+    position: absolute;
+    bottom: -35%;
+    left: 5%;   
+    width: 50%;
+}
+
+.pokemon1 img {
+    width: 100%;
+}
+
+.pokemon2 {
+    position: absolute;
+    top: 15%;
+    right: 12%;   
+    width: 20%; 
+}
+
+.pokemon2 img {
+    width: 100%;
+}

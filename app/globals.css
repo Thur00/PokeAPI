@@ -1,107 +1,400 @@
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
-}
-
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    margin: 0;
+    padding: 0;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background-color: #fbfaee;
+}
+
+.batalhaTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxPesquisa {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pesquisa {
+    border: 2px solid #000;
+    border-radius: 20px;
+    width: 20%;
+    margin: 1% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.pesquisa>input {
+    border: 2px solid #000;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 7px 12px;
+}
+
+.pesquisa>button {
+    position: absolute;
+    height: fit-content;
+    border: none;
+    background-color: transparent;
+    right: 5px;
+    top: 2px;
+}
+
+.startBtn {
+    border: 2px solid #000;
+    border-radius: 15px;
+    height: 10vh;
+    width: 10vw;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15pt;
+}
+
+.boxVencedor {
+    background-color: #ccc;
+    border-radius: 10px;
+    width: 20%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.boxBtn {
+    position: absolute;
+    right: 100px;
+    bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.tit{
+    color: #ffde00;
+    background-color:  #3b4cca;
+    width: 60%;
+    text-align: center;
+    border-radius: 10px;
+    margin: 2% auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/PokeAPI-print.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 220px;
+}
+
+.image {
+    width: 70vh;
+    height: 35vh;
+    position: relative;
+}
+
+.butsm {
+    font-size: x-large;
+    color: #ffde00;
+    background-color: #3b4cca;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: none;
+    transition: 0.4s;
+}
+
+.butsm:hover {
+    background-color: #142288;
+}
+
+.api {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 10% 0;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.api2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10%;
+    text-align: center;
+    color: white;
+    padding: 0px 80px;
+}
+
+.apititle {
+    color: #3b4cca;
+    margin-bottom: 3%;
+
+}
+
+.pokeapititle {
+    color: #ff0000;
+    margin-bottom: 3%;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url(/caverna2.png);
+    border-image: fill 0% linear-gradient(#000, #0008, #0000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+}
+
+.quadrados {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 30px;
+    align-items: center;
+    text-align: justify;
+    width: 30%;
+    font-size: large;
+}
+
+.title {
+    text-align: center;
+    color: #ff0000;
+}
+
+.butlink {
+    color: #ffde00;
+    background-color: #3b4cca;
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    transition: 0.4s;
+    margin-top: 7%;
+}
+
+.butlink:hover {
+    background-color: #142288;
+}
+
+.gradiente {
+    height: 100vh;
+    background: rgb(130, 184, 115);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgb(51, 72, 46) 50%, rgba(130, 184, 115, 1) 100%);
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    text-decoration: none;
+    color: #fff;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.cenario {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cenario video {
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+}
+
+.cenario .api {
+    position: absolute;
+    top: 30px;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.bgGrass {
+    background-color: #67b93f;
+}
+
+.bgWater {
+    background-color: #12ade7;
+}
+
+.bgNormal {
+    background-color: #eff1ee;
+}
+
+.bgFire {
+    background-color: #f37434;
+}
+
+.bgEletrico {
+    background-color: #fdd108;
+}
+
+.bgPsiquico {
+    background-color: #8e59a1;
+}
+
+.bgDark {
+    background-color: #172629;
+    color: white
+}
+
+.bgDragon {
+    background-color: #D9A41A;
+}
+
+.bgFada {
+    background-color: #DD3D86;
+}
+
+.bgLutador {
+    background-color: #c87c22;
+}
+
+.bgMetal {
+    background-color: #80908f;
+}
+
+.bgPokemon {
+    background-image: url("/bgPokemon.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 35%;
+    margin: 0 auto 3%;
+}
+
+.carta {
+    border: 10px solid #ffe165;
+    border-radius: 15px;
+    width: 60vh;
+    height: 80vh;
+    margin: 7% auto 7%;
+}
+
+.nomepoke {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3% auto;
+    align-items: center;
+    width: 90%;
+
+}
+
+.energiapoke {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+}
+
+.energiapoke h3 {
+    width: 50%;
+    text-align: right;
+}
+
+.hp {
+    font-size: 10pt;
+}
+
+.fotoElemento {
+    width: 5vh;
+    height: 5vh;
+}
+
+.fotoPoke {
+    margin: 0 auto 3%;
+    display: flex;
+    flex-direction: column;
+    width: 30vh;
+}
+
+.descriçao {
+    margin: 15% 0 0 15%;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .api {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .api2 {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .flexbox {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .flex {
+        padding: 20px;
+    }
+
+    .image {
+        width: 30vh;
+        height: 15vh;
+    }
+
+    .quadrados {
+        padding: 30px;
+        width: 80%;
+        font-size: large;
+        margin-bottom: 5%;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .cenario video {
+        width: 300%;
+    }
+
+    .carta {
+        width: 35vh;
+        height: 50vh;
+    }
+
+    .fotoElemento {
+        width: 3vh;
+        height: 3vh;
+    }
+
+    .fotoPoke {
+        width: 20vh;
+    }
 }
