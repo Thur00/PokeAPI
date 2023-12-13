@@ -112,12 +112,12 @@ html {
 .gradiente {
     height: 100vh;
     background: rgb(130, 184, 115); 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%,rgb(51, 72, 46) 50%, rgba(130, 184, 115, 1) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%,rgb(51, 72, 46) 50%, rgba(130, 184, 115, 1) 100%);\
 }
 
 a {
     text-decoration: none;
-    color: #ffde00;
+    color: #fff;
 }
 
 .cenario {
@@ -258,6 +258,21 @@ a {
     margin: 2%;
 }
 
+.tudo1{
+    background-color: #fbfaee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+}
+
+.tudo2{
+    background-color: #fbfaee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media only screen and (max-width: 800px) {
 
     .api {
@@ -312,5 +327,4 @@ a {
     .fotoPoke{
         width: 20vh;
     }
-
 }

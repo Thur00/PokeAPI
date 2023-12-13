@@ -18,7 +18,7 @@
 }
 
 .btn {
-    background-color: #EA0101;
+    background-color: #8a0707;
     display: flex;
     width: 20%;
     align-items: center;
@@ -26,11 +26,10 @@
     height: 70px;
     list-style-type: none;
     font-size: 15pt;
-    border: 2px solid #EA0101;
+    border: 2px solid #8a0707;
     border-radius: 8px;
     padding: 5px;
-    border-bottom: 6px solid #EA0101;
-
+    color: #ffde00;
 }
 
 @media only screen and (max-widTh: 800px) {
