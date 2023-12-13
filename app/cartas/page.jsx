@@ -44,6 +44,7 @@ function CartaPoke() {
             {error && <p style={{ color: "red" }}>{error}</p>}
 
             {pokemon && <Carta pokemon={pokemon} />}
+            <span className="arrumaFooter"></span>
         </div>
     )
 }

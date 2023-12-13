@@ -298,7 +298,11 @@ a {
     border-radius: 15px;
     width: 60vh;
     height: 80vh;
-    margin: 7% auto 7%;
+    margin: 7% auto;
+}
+
+.arrumaFooter {
+    padding: 1px;
 }
 
 .nomepoke {
