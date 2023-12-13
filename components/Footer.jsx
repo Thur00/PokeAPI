@@ -10,7 +10,7 @@ function Footer() {
                 <p>Professores Tupinambá e Leandro</p>
             </div>
             <button className={style.btn}>
-                <Link href="/">Sobre Nós </Link>
+                <Link href="/sobreNos">Sobre Nós </Link>
             </button>
         </div>
     )

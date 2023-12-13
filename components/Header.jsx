@@ -12,13 +12,13 @@ function Header() {
                     <Link href="/">Página Inicial</Link>
                 </li>
                 <li>
-                    <Link href="/">Cartas</Link>
+                    <Link href="/cartas">Cartas</Link>
                 </li>
                 <li>
-                    <Link href="/">Pokedex</Link>
+                    <Link href="/pokedex">Pokedex</Link>
                 </li>
                 <li>
-                    <Link href="/">Batalha</Link>
+                    <Link href="/batalha">Batalha</Link>
                 </li>
             </ul>
             <div className={style.img2}>

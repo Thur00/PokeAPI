@@ -6,14 +6,16 @@ import Footer from "@/components/Footer"
 import { useState } from "react"
 
 function CartaPoke() {
-    const [pokemonID, setPokemonID] = useState(1)
+    const [pokemonID, setPokemonID] = useState(null)
     const [pokemon, setPokemon] = useState(null)
     const [error, setError] = useState(null)
 
     const getPokemon = async () => {
+        const nomeInput = pokemonID.toLowerCase()
+
         try {
             const resposta = await fetch(
-                `https://pokeapi.co/api/v2/pokemon/${pokemonID}`
+                `https://pokeapi.co/api/v2/pokemon/${nomeInput}`
             );
             const data = await resposta.json();
             setPokemon(data);
