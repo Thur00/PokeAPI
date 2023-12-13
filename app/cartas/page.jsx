@@ -31,7 +31,6 @@ function CartaPoke() {
 
     return (
         <div>
-            <Header></Header>
             <h1 className="tit"> Pokecards </h1>
 
             <div className="pesquisa">
@@ -45,7 +44,6 @@ function CartaPoke() {
             {error && <p style={{ color: "red" }}>{error}</p>}
 
             {pokemon && <Carta pokemon={pokemon} />}
-            <Footer></Footer>
         </div>
     )
 }

@@ -15,8 +15,8 @@
     font-size: 15pt;
     background-color: #FF0000;
     height: 200px;
-    position: relative;
-    bottom: 0;
+    position:absolute;
+    bottom: -200px;
 }
 
 .btn {

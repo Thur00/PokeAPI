@@ -18,7 +18,6 @@ function SobreNos() {
 
     return (
         <>
-            <Header />
             <main>
                 <div className="tit">
                     <h1>Sobre nós</h1>
@@ -28,7 +27,6 @@ function SobreNos() {
                     <Integrante ImageUrls={ImageUrls} />
                 </div>
             </main>
-            <Footer />
         </>
     )
 }

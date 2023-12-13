@@ -5,9 +5,6 @@ import Footer from "@/components/Footer";
 function PgInicial() {
   return (
     <>
-
-    <Header></Header>
-
       <div className="flex" >
         <div className="image">
           <Image src="/pokeapi.png" fill sizes="100%, 100%" />
@@ -59,8 +56,6 @@ function PgInicial() {
 
       </div>
 
-      <Footer></Footer>
-      
     </>
   )
 }

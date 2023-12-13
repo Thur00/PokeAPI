@@ -9,6 +9,8 @@ html {
 
 body {
     background-color: #fbfaee;
+    position: relative;
+    min-height: calc(100vh - 200px);
 }
 
 .batalhaTitle {
@@ -344,6 +346,10 @@ a {
 }
 
 @media only screen and (max-width: 800px) {
+
+    .pesquisa {
+        width: 80%;
+    }
 
     .api {
         padding: 10px;

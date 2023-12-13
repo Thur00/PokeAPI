@@ -104,7 +104,6 @@ function PokeBattle() {
 
     return (
         <>
-            <Header />
             <div className="batalhaTitle">
                 <h1 className="tit">Batalhe</h1>
                 <div className="boxPesquisa">
@@ -153,7 +152,6 @@ function PokeBattle() {
 
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

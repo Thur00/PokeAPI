@@ -34,7 +34,6 @@ const Pokedex = () => {
 
     return (
         <>
-            <Header></Header>
             <div className={style.tudo}>
 
                 <h1 className="tit">Pokédex</h1>
@@ -51,8 +50,6 @@ const Pokedex = () => {
 
                 {pokemon && <Pokedexcomp pokemon={pokemon} />}
             </div>
-
-            <Footer></Footer>
         </>
     )
 }
