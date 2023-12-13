@@ -92,7 +92,7 @@ const Pokemon = ({ pokemon }) => {
             </div>
             <div className="descriçao">
                 <h2>{letra1Mais}</h2>
-                <br />
+                <br /><br />
                 <h3>{letra2Mais}</h3>
             </div>
         </div>

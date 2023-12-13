@@ -41,10 +41,10 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 90% 10% 0;
+    margin: 10% 10% 0;
     text-align: center;
     color: white;
-    padding: 80px;
+    padding: 10px;
 }
 
 .api2 {
@@ -73,7 +73,7 @@ html {
     flex-direction: row;
     justify-content: space-around;
     background-image: url(/caverna2.png);
-    border-image: fill 5% linear-gradient(#000, #0003, #0000);
+    border-image: fill 0% linear-gradient(#000, #0008, #0000);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -111,8 +111,8 @@ html {
 
 .gradiente {
     height: 100vh;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 20%, rgba(130, 184, 115, 1) 100%);
+    background: rgb(130, 184, 115); 
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%,rgb(51, 72, 46) 50%, rgba(130, 184, 115, 1) 100%);
 }
 
 a {
@@ -140,7 +140,7 @@ a {
 
 .cenario .api {
     position: absolute;
-    top: 60px;
+    top: 30px;
     z-index: 1;
     margin: 0 auto;
 }
@@ -250,7 +250,7 @@ a {
 }
 
 .descriçao{
-    margin-left: 5%;
+    margin: 15% 0 0 15%;
 }
 
 .titutis{

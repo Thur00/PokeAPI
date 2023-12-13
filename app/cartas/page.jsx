@@ -26,39 +26,6 @@ function CartaPoke() {
         }
     }
 
-    // const proxPokemon = async () => {
-
-    //     try {
-    //         const resposta = await fetch(
-    //             `https://pokeapi.co/api/v2/pokemon/${pokemonId}`
-    //         );  
-    //         const data = await resposta.json();
-    //         setPokemon(data);
-    //         setError(null)
-    //     }
-    //     catch (error) {
-    //         console.error("Erro ao buscar o Pokemon:", error);
-    //         setError("Falha ao buscar o Pokemon. Tente novamente")
-    //     }
-    // }
-
-    // const antePokemon = async () => {
-    //     pokemonId = pokemon.id -= 1
-
-    //     try {
-    //         const resposta = await fetch(
-    //             `https://pokeapi.co/api/v2/pokemon/${pokemonId}`
-    //         );
-    //         const data = await resposta.json();
-    //         setPokemon(data);
-    //         setError(null)
-    //     }
-    //     catch (error) {
-    //         console.error("Erro ao buscar o Pokemon:", error);
-    //         setError("Falha ao buscar o Pokemon. Tente novamente")
-    //     }
-    // }
-
     return (
         <div>
             <Header></Header>
@@ -69,8 +36,6 @@ function CartaPoke() {
                 onChange={event => setPokemonID(event.target.value)}
             />
             <button onClick={getPokemon}>Procurar pokemon</button>
-            {/* <button onClick={proxPokemon()}>+ pokemon</button>
-            <button onClick={antePokemon()}>- pokemon</button> */}
 
             {error && <p style={{ color: "red" }}>{error}</p>}
             {pokemon && <Carta pokemon={pokemon} />}

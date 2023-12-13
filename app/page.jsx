@@ -46,7 +46,7 @@ function PgInicial() {
           <p> Oferece uma variedade de funções, incluindo acesso a dados sobre Pokémon, tipos, movimentos, habilidades e muito mais. Ela é uma
             fonte de dados online que contém informações detalhadas sobre todos os Pokémon conhecidos. Se você tiver interesse em usá-la,
             acesse o link abaixo para obter mais informações detalhadas sobre as funções específicas que ela oferece. </p>
-          <a href="https://pokeapi.co/"> <button className="butlink"> Acesse a documentação oficial da API </button></a>
+          <a href="https://pokeapi.co/" target="blank"> <button className="butlink"> Acesse a documentação oficial da API </button></a>
         </div>
 
         <div className="quadrados">
