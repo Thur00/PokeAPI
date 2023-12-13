@@ -4,6 +4,7 @@ import Pokedexcomp from "@/components/Pokedexcomp"
 import style from "@/app/pokedex/page.module.css"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import Image from "next/image"
 
 
 const Pokedex = () => {
@@ -28,22 +29,26 @@ const Pokedex = () => {
             setError("Falha na busca Pokemon. Tente novamente.")
         }
     }
-    
+
 
 
     return (
         <>
             <Header></Header>
-            <div className={"tudo2"}>
+            <div className={style.tudo}>
 
-                <h1 className={style.tit}>Pokédex</h1>
-                <input className={style.input}
-                    type="text"
-                    value={pokemonNome}
-                    onChange={(event) => setPokemonNome(event.target.value)} />
+                <h1 className="tit">Pokédex</h1>
 
-                <button onClick={getPokemon}>Pesquisar Pokemon</button>
+                <div className="pesquisa">
+                    <input
+                        type="text"
+                        value={pokemonNome}
+                        onChange={event => setPokemonNome(event.target.value)}
+                    />
+                    <button onClick={getPokemon}><Image src="/lupa.png" alt="Pesquisar" width={24} height={24} /></button>
+                </div>
                 {error && <p style={{ color: "red" }}>{error}</p>}
+
                 {pokemon && <Pokedexcomp pokemon={pokemon} />}
             </div>
 

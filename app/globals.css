@@ -7,6 +7,97 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #fbfaee;
+}
+
+.batalhaTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxPesquisa {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pesquisa {
+    border: 2px solid #000;
+    border-radius: 20px;
+    width: 20%;
+    margin: 1% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.pesquisa>input {
+    border: 2px solid #000;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 7px 12px;
+}
+
+.pesquisa>button {
+    position: absolute;
+    height: fit-content;
+    border: none;
+    background-color: transparent;
+    right: 5px;
+    top: 2px;
+}
+
+.startBtn {
+    border: 2px solid #000;
+    border-radius: 15px;
+    height: 10vh;
+    width: 10vw;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15pt;
+}
+
+.boxVencedor {
+    background-color: #ccc;
+    border-radius: 10px;
+    width: 20%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.boxBtn {
+    position: absolute;
+    right: 100px;
+    bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.tit{
+    color: #ffde00;
+    background-color:  #3b4cca;
+    width: 60%;
+    text-align: center;
+    border-radius: 10px;
+    margin: 2% auto;
+}
+
 .flex {
     display: flex;
     flex-direction: column;
@@ -111,8 +202,8 @@ html {
 
 .gradiente {
     height: 100vh;
-    background: rgb(130, 184, 115); 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%,rgb(51, 72, 46) 50%, rgba(130, 184, 115, 1) 100%);
+    background: rgb(130, 184, 115);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgb(51, 72, 46) 50%, rgba(130, 184, 115, 1) 100%);
 }
 
 a {
@@ -198,7 +289,6 @@ a {
     width: 90%;
     height: 35%;
     margin: 0 auto 3%;
-    
 }
 
 .carta {
@@ -206,7 +296,7 @@ a {
     border-radius: 15px;
     width: 60vh;
     height: 80vh;
-    margin: 0 auto 3%;
+    margin: 7% auto 7%;
 }
 
 .nomepoke {
@@ -229,7 +319,7 @@ a {
 }
 
 .energiapoke h3 {
-    width: 50%  ;
+    width: 50%;
     text-align: right;
 }
 
@@ -242,35 +332,15 @@ a {
     height: 5vh;
 }
 
-.fotoPoke{
+.fotoPoke {
     margin: 0 auto 3%;
     display: flex;
     flex-direction: column;
     width: 30vh;
 }
 
-.descriçao{
+.descriçao {
     margin: 15% 0 0 15%;
-}
-
-.titutis{
-    text-align: center;
-    margin: 2%;
-}
-
-.tudo1{
-    background-color: #fbfaee;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 70vh;
-}
-
-.tudo2{
-    background-color: #fbfaee;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -324,7 +394,7 @@ a {
         height: 3vh;
     }
 
-    .fotoPoke{
+    .fotoPoke {
         width: 20vh;
     }
 }

@@ -4,6 +4,7 @@ import Carta from "@/components/Carta"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import { useState } from "react"
+import Image from "next/image"
 
 function CartaPoke() {
     const [pokemonID, setPokemonID] = useState(null)
@@ -31,15 +32,18 @@ function CartaPoke() {
     return (
         <div>
             <Header></Header>
-            <h1 className="titutis"> Pokecards </h1>
-            <input
-                type="text"
-                value={pokemonID}
-                onChange={event => setPokemonID(event.target.value)}
-            />
-            <button onClick={getPokemon}>Procurar pokemon</button>
+            <h1 className="tit"> Pokecards </h1>
 
+            <div className="pesquisa">
+                <input
+                    type="text"
+                    value={pokemonID}
+                    onChange={event => setPokemonID(event.target.value)}
+                />
+                <button onClick={getPokemon}><Image src="/lupa.png" alt="Pesquisar" width={24} height={24} /></button>
+            </div>
             {error && <p style={{ color: "red" }}>{error}</p>}
+
             {pokemon && <Carta pokemon={pokemon} />}
             <Footer></Footer>
         </div>
